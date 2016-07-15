@@ -1,0 +1,371 @@
+@import "reset.css";
+@font-face {
+    font-family: Lato-Bold;
+    src: url('font/Lato-Bol.ttf');
+}
+
+@font-face {
+	font-family: Lato-Reg;
+	src: url('font/Lato-Reg.ttf');
+}
+
+@font-face {
+	font-family: Lato-Light;
+	src: url('font/Lato-Lig.ttf');
+}
+
+@font-face {
+	font-family: Lato-Hairline;
+	src: url('font/Lato-Hai.ttf');
+}
+
+@font-face {
+	font-family: Lato-HairlineIta;
+	src: url('font/Lato-HaiIta.ttf');
+}
+
+html {
+	height: 100%;
+}
+
+body {
+
+	height: 100%;
+	background-color: #fff;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+.container {
+	width: 1180px;
+	margin: 0 auto;
+}
+
+#header {
+	padding: 6px 0;
+	width: 100%;
+	top: 12px;
+	position: absolute;
+}
+
+.logo {
+	margin-left: -39px;
+	margin-top: -39px;
+	float: left;
+}
+
+.nav {
+	float: right;
+	padding-top: 25px;
+}
+.nav li {
+	float:left;
+	margin-right: 30px;
+}
+
+.nav a {
+	text-transform: uppercase;
+	font: 14px Lato-Bold, Arial;
+	color: #fff;
+}
+
+#main {
+	height: 660px;
+	padding-top: 355px;
+	text-align: center;
+	color: #fff;
+	background: #222 url(img/banner.jpg) no-repeat center bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	   background-size: cover;
+}
+
+#main h3 {
+	margin-bottom: 10px;
+	font: italic bold 36px times-new-roman;
+}
+
+#main h1 {
+	margin-bottom: 40px;
+	font: 100px Lato-Bold, Arial;
+}
+
+#main h1, #main button,
+#main p {
+	text-transform: uppercase;
+}
+
+.startBtn {
+	cursor: pointer;
+	padding: 20px 75px;
+	border: solid;
+	font: 18px Lato-Bold, Arial;
+	color: #fff;
+	background: transparent;
+	margin-bottom: 40px;
+	border-radius: 4px;
+}
+
+#main p {
+	font: 14px Lato-Reg, Arial;
+}
+
+#circles {
+	padding: 100px 0;
+	height: 280px;
+}
+
+.services {
+	padding-top: 128px;
+	float: left;
+	width: 33.33%;
+	text-align: center;
+}
+
+.services p {
+    text-align: center;
+	padding: 20px 10px 100px;
+}
+
+.services h5 {
+	text-align: center;
+	padding: 0 10px;
+}
+
+.subtitle {
+	font: 18px Lato-Bold, Arial;
+	text-transform: uppercase;
+}
+
+.descr {
+	font: 16px Lato-Light;
+}
+
+.inspire {
+	background: url(img/icon1.png) no-repeat center top;
+}
+
+.reward {
+	background: url(img/icon2.png) no-repeat center top;
+}
+
+.social {
+	background: url(img/icon3.png) no-repeat center top;
+}
+
+#app {
+	padding: 100px 0;
+	height: 680px;
+	background: #f7f7f7;
+}
+
+#iphone {
+	float: left;
+	margin-right: 120px;
+	margin-top: 6px;
+}
+
+#appInfo {
+	padding-top: 83px;
+}
+
+#appInfo h5 {
+	
+}
+
+#appInfo p {
+	margin-top: 25px;
+	margin-bottom: 45px;
+}
+
+.stores img {
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.feedBack {
+	background: #4A3949 url(img/cooking.png) no-repeat center;
+	padding: 58px;
+}
+
+.revWrap {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+.review {
+	font: 30px Lato-Hairline, sans-serif;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.signature {
+	font: 22px Lato-HairlineIta, sans-serif;
+	margin-bottom: 30px;
+}
+
+#browse {
+	width:100%;
+	padding-top: 100px;
+	text-align: center;
+
+}
+
+.browseWrap p {
+	margin-bottom: 10px;
+}
+
+.browseWrap img {
+	padding-bottom: 40px;
+}
+
+#cuisines {
+	width:100%;
+	margin:0 auto;
+	margin-top:.5%;
+}
+
+.img-wrapper {
+	width:20%;
+	position:relative;
+	float:left;
+}
+
+figure {
+	cursor: pointer;
+}
+
+figure img {
+	width: 100%;
+}
+
+figure figcaption {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+    top: 20%;
+    box-sizing: border-box;
+    color: white;
+}
+
+figure p {
+	font: italic bold 16pt times-new-roman;
+	position: relative;
+	opacity: 0;
+    -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+    -webkit-transition: opacity 1s ease;
+          transition: opacity 1s ease;
+}
+
+figure h3 {
+	font: 36pt Lato-Bold;
+	text-transform: uppercase;
+	position: relative;
+	opacity: 0;
+    -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+    -webkit-transition: opacity 1s ease;
+          transition: opacity 1s ease;
+}
+
+figure:hover p, 
+figure:hover h3 {
+  opacity: 1;
+}
+
+#footer {
+	padding: 60px 0;
+}
+
+.tables {
+	text-align: center;
+	width: 20%;
+	float: left;
+}
+
+.tables h2 {
+	font: 36px Lato-Bold;
+	margin-bottom: 15px;
+}
+
+.tables p {
+	padding-bottom: 60px;
+}
+
+
+@media screen and (max-width: 1179px) {
+	.container{
+		width: 100%;		
+	}
+	
+	#app {
+		display: none;
+	}
+
+	figcaption {
+		display: none;
+	}
+
+	figcaption p {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 640px) {
+
+
+	#header .container {
+		background: url(img/logo2.png) no-repeat center;
+		height: 300px;
+		padding-top: 150px;
+	}
+
+	#main .container{
+		padding-top: 100px;
+	}
+	
+	.services{
+		width: 100%;
+		display: block;
+	}
+
+	#circles {
+		height: auto;
+	}
+	
+	.services p {
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.social p {
+		padding-bottom: 0;
+	}
+	
+	#footer {
+		display: none;
+	}
+	
+	.img-wrapper {
+		width: 50%;
+	}
+	.nav, .logo{
+		display: none;
+
+	}
+
+}
+
